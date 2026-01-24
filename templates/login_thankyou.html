@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .thankyou-message {
+            background: #fff;
+            max-width: 420px;
+            margin: 80px auto;
+            padding: 40px 32px 32px 32px;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,77,152,0.12);
+            text-align: center;
+        }
+        .thankyou-message h2 {
+            color: #a50044;
+            margin-bottom: 18px;
+        }
+        .thankyou-message p {
+            color: #004d98;
+            font-size: 18px;
+            margin-bottom: 28px;
+        }
+    </style>
+</head>
+<body>
+    {% if request.cookies.get('is_admin') == 'true' %}
+        <div style="position: absolute; top: 24px; right: 36px; z-index: 1000;">
+            <a href="/users" style="background: linear-gradient(90deg, #004d98 0%, #a50044 100%); color: #ffcb05; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">Go to Users Section</a>
+        </div>
+    {% endif %}
+    <div class="thankyou-message">
+        <h2>Login Successful!</h2>
+        {% if request.cookies.get('is_admin') == 'true' %}
+            <p style="margin-top: 60px;">Welcome, Admin! You can view all users.</p>
+        {% else %}
+            <p style="font-size: 2em; font-style: italic; color: #a50044; font-family: 'Georgia', serif; margin-top: 60px;">Welcome to my website guys!</p>
+        {% endif %}
+        <br>
+        <a href="/" style="margin-top: 28px; display: inline-block; font-size: 1.5em; font-weight: bold; color: #004d98;">Back to Homepage</a>
+    </div>
+</body>
+</html>

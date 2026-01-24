@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome - FastAPI App</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            background: linear-gradient(120deg, #141516 0%, #414345 60%, #757575 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .welcome-container {
+            background: #141414;
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 70px 32px 32px 32px;
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgba(255,0,0,0.18);
+            text-align: center;
+        }
+        .welcome-container h1 {
+            color: #ff2222;
+            margin-bottom: 18px;
+            letter-spacing: 2px;
+            text-shadow: 1px 2px 8px #000;
+        }
+        .welcome-container p {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 28px;
+        }
+        .welcome-container a {
+            display: inline-block;
+            background: linear-gradient(90deg, #ff2222 0%, #b30000 100%);
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 12px 32px;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s;
+            box-shadow: 0 2px 8px rgba(255,0,0,0.15);
+        }
+        .welcome-container a:hover {
+            background: linear-gradient(90deg, #b30000 0%, #ff2222 100%);
+            color: #ff2222;
+            background-blend-mode: multiply;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to My Website</h1>
+        <p>Experience a modern, colorful, and secure web application.<br>Click below to login and get started!</p>
+        <a href="/register">Get Started</a>
+    </div>
+</body>
+</html>

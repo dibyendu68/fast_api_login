@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FastAPI Form</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Submit Your Info</h2>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label for="number">Number:</label>
+            <input type="text" name="number" pattern="[0-9]{10}" maxlength="10" minlength="10" required oninvalid="this.setCustomValidity('Enter your 10 digit mobile number😀')" oninput="this.setCustomValidity('')"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

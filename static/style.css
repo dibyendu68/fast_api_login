@@ -1,0 +1,71 @@
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #004d98 0%, #a50044 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: 1px 2px 8px #43c6ac;
+}
+
+form {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    padding: 30px 30px 20px 30px;
+    margin: 50px auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(67,198,172,0.2);
+    max-width: 420px;
+    border: 2px solid #43c6ac;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #314d4d;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 2px solid #004d98;
+    border-radius: 6px;
+    background: #fff8f0;
+    font-size: 16px;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    border: 2px solid #a50044;
+    outline: none;
+}
+
+button {
+    background: linear-gradient(90deg, #004d98 0%, #a50044 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(67,198,172,0.15);
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #a50044 0%, #004d98 100%);
+    transform: scale(1.04);
+}
