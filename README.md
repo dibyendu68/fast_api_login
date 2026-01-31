@@ -24,12 +24,6 @@ uvicorn main:app --reload
 
 
 
-Usage
-- Visit http://127.0.0.1:8000 in your browser
-- Register a new user at /register
-- Log in at /login
-- Logout at /logout
-
 Project Structure
 fast_api_login/
 │── main.py        # Application entry point
